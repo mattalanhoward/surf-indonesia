@@ -1,0 +1,93 @@
+/*Stylesheet*/
+$offWhite:  #ddd;
+
+body {
+    background-color: $offWhite;
+}
+
+/* styles the navigation bar */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    opacity: 0.9;
+    a {
+        float: left;
+        color: $offWhite;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        &:hover {
+            background-color: $offWhite;
+            color: black;
+        }
+        &.active{
+            background-color: $offWhite;
+            color: black;
+        }
+    }
+}
+  
+/*100vh sets the masthead with image to 100% of viewport height, will change depending on screen*/
+.masthead {
+    height: 80vh;
+    min-height: 500px;
+    background-image: url(../images/java11.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*Sets the text styling in the centre of the home page - heading*/
+
+%foregroundTitle{
+    color: $offWhite;
+    font-weight: bold;
+}
+
+#title1 {
+    @extend %foregroundTitle;
+}
+
+/* sub-heading*/
+#title2{
+    @extend %foregroundTitle;
+    font-style: italic;
+}
+
+/* This container is used to hold the photo gallery*/
+.container1 {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    max-width: 1400px;
+}
+
+/*These @medias change the size of the images in the image galleries depending on the size of the viewing port */
+@media (min-width: 800px) {
+    .photo{
+        margin: 20px;
+        height: 400px;
+    }
+
+    #title1{
+        font-size: 700%;
+    }
+}
+
+@media (max-width: 799px) {
+    .photo{
+        margin: 10px;
+        height: 250px;
+    }
+    #title1{
+        font-size: 400%;
+    }
+}
+
+/* adjusting spacing on info page*/
+#info-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
