@@ -7,7 +7,3 @@ There are 4 pages to the website: a landing page, 2 pages displaying surf photos
 The website aims to meet all of the criteria of Harvard CS50 Web project0.
 
 All photos were taken by me (Oliver Jackson).
-
-
-
-Thanks for watching....
